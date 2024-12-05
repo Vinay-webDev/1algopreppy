@@ -45,5 +45,25 @@ class Solution:
 # print(sol.find_all_pairs(array, target)) #[[1, 9], [2, 8], [3, 7], [4, 6]]
 # print(sol.find_all_pairs(array2, target2)) #[[10, 45], [15, 40], [20, 35], [25, 30]]
 
-#3. 
+#3. reverse words in a string
+s = "hello bro nice to meet you"
+s2 = "our house is too far"
+s3 = "eat pizza and then go to work"
+s4 = "a b c d e f g h i"
+class Solution:
+    def reverse_words(self, s):
+        words = s.split(" ")
+        left, right = 0, len(words) - 1
+        
+        while left < right:
+            words[left], words[right] = words[right], words[left]
+            left += 1
+            right -= 1
+        return " ".join(words)
+sol = Solution()
+print(sol.reverse_words(s)) #you meet to nice bro hello
+print(sol.reverse_words(s2)) #far too is house our
+print(sol.reverse_words(s3)) #work to go then and pizza eat
+print(sol.reverse_words(s4)) #i h g f e d c b a
+
 
