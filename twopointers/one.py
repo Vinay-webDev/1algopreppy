@@ -60,10 +60,15 @@ class Solution:
             left += 1
             right -= 1
         return " ".join(words)
-sol = Solution()
-print(sol.reverse_words(s)) #you meet to nice bro hello
-print(sol.reverse_words(s2)) #far too is house our
-print(sol.reverse_words(s3)) #work to go then and pizza eat
-print(sol.reverse_words(s4)) #i h g f e d c b a
+# sol = Solution()
+# print(sol.reverse_words(s)) #you meet to nice bro hello
+# print(sol.reverse_words(s2)) #far too is house our
+# print(sol.reverse_words(s3)) #work to go then and pizza eat
+# print(sol.reverse_words(s4)) #i h g f e d c b a
 
-
+#4. remove duplicates from a sorted array
+array = [1, 1, 2, 3, 3, 4]
+array2 = [100, 100, 300, 400]
+class Solution:
+    def remove_duplicates(self, arr):
+        
